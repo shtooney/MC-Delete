@@ -40,16 +40,15 @@ public class MyMCdelete {
             //your actual endpoint, whichever one it is
             request1.setEndpoint('https://na59.salesforce.com/services/data/v41.0/sobjects/Contact/' + subscriberID);
             
-			/**
-			 * MC Endpoint URL
-			 * Good chance you may need to do a POST vs a delete WS
-			 */ 
+	
+	    //MC Endpoint URL
+	    //Good chance you may need to do a POST vs a delete WS		
             //request1.setMethod('POST');
             //request1.setBody('{"LastName" : "'+ subscriberID +'"}'); --> this hardcodes JSON but one can use serialization/etc            
             //request1.setEndpoint('https://na59.salesforce.com/services/data/v41.0/sobjects/Contact/');
 
             
-		      	HttpResponse responce1 = http1.send(request1);  
+	    HttpResponse responce1 = http1.send(request1);  
             system.debug('Response Body: '+responce1.getbody());
         }
 
