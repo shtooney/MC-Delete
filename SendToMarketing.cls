@@ -4,7 +4,7 @@ global class SendToMarketing {
     global class MyVars {
         @InvocableVariable(label='Subscriber ID' required=true)
         public String subscriberID;
-		    @InvocableVariable(label='First Name')
+	@InvocableVariable(label='First Name')
         public String firstName;  
         @InvocableVariable(label='Last Name')
         public String lastName;  
